@@ -1,13 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Button } from 'antd';
+import {Button} from 'antd';
 import './App.less';
 import less from 'less';
 
+/**
+ * Default App
+ * @return {ReactNode} render
+ */
 function App() {
-
   const handleClick = (e: any) => {
-    less.modifyVars({'@root-entry-name':'dark', '@custom-color':'green'});
+    less.modifyVars({
+    });
   };
 
   return (
