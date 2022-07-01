@@ -1,10 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { Button } from 'antd';
+import './App.less';
+import less from 'less';
 
 function App() {
+
+  const handleClick = (e: any) => {
+    less.modifyVars({'@root-entry-name':'dark', '@custom-color':'green'});
+  };
+
   return (
     <div className="App">
+      <Button type='primary' onClick={handleClick}>Click Me!</Button>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
