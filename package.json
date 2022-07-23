@@ -2,6 +2,7 @@
   "name": "modify-vars",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.16.4",
@@ -49,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@hon2a/less-vars-to-js": "^0.2.0",
     "@types/less": "^3.0.3"
   }
 }
